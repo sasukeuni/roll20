@@ -1,0 +1,469 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+@font-face {font-family: AbrahamLincoln;  src: url(https://github.com/sasukeuni/roll20/raw/master/Steam_States/AbrahamLincoln.ttf);}
+span.cls_003{font-family:AbrahamLincoln,serif;font-size:16.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:AbrahamLincoln,serif;font-size:16.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:AbrahamLincoln,serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:AbrahamLincoln,serif;font-size:14.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:AbrahamLincoln,serif;font-size:6.4px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:AbrahamLincoln,serif;font-size:6.4px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:AbrahamLincoln,serif;font-size:8.1px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:AbrahamLincoln,serif;font-size:8.1px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:AbrahamLincoln,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:AbrahamLincoln,serif;font-size:8.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:AbrahamLincoln,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:AbrahamLincoln,serif;font-size:11.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:AbrahamLincoln,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:AbrahamLincoln,serif;font-size:9.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:AbrahamLincoln,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:AbrahamLincoln,serif;font-size:12.1px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:AbrahamLincoln,serif;font-size:7.0px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:AbrahamLincoln,serif;font-size:7.0px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:AbrahamLincoln,serif;font-size:9.1px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:AbrahamLincoln,serif;font-size:9.1px;color:rgb(128,130,130);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="express/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:420px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="express/background1.jpg" width=595 height=420></div>
+<div style="position:absolute;left:162.86px;top:11.21px" class="cls_003"><span class="cls_003">Características</span></div>
+<div style="position:absolute;left:286.84px;top:13.21px" class="cls_007"><span class="cls_007">Especialidades</span></div>
+<div style="position:absolute;left:488.33px;top:13.21px" class="cls_007"><span class="cls_007">Vitalidad</span></div>
+<div style="position:absolute;left:360.94px;top:26.71px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:371.24px;top:26.71px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:381.85px;top:26.71px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:392.15px;top:26.71px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:402.46px;top:26.71px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:415.78px;top:25.04px" class="cls_008"><span class="cls_008">Carac.  Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:222.79px;top:28.04px" class="cls_004"><span class="cls_004">Base</span></div>
+<div style="position:absolute;left:248.57px;top:28.04px" class="cls_008"><span class="cls_008">Mod.</span></div>
+<div style="position:absolute;left:495.75px;top:29.16px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:533.93px;top:29.16px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:164.81px;top:41.33px" class="cls_005"><span class="cls_005">Fuerza (Frz)</span></div>
+<div style="position:absolute;left:164.81px;top:60.59px" class="cls_005"><span class="cls_005">Aguante (Agu)</span></div>
+<div style="position:absolute;left:488.33px;top:60.93px" class="cls_007"><span class="cls_007">Blindaje</span></div>
+<div style="position:absolute;left:25.55px;top:72.80px" class="cls_006"><span class="cls_006">Jugador</span></div>
+<div style="position:absolute;left:530.11px;top:71.64px" class="cls_004"><span class="cls_004">CA</span></div>
+<div style="position:absolute;left:554.99px;top:71.64px" class="cls_008"><span class="cls_008">MS</span></div>
+<div style="position:absolute;left:164.81px;top:79.59px" class="cls_005"><span class="cls_005">Agilidad (Agi)</span></div>
+<div style="position:absolute;left:486.25px;top:84.93px" class="cls_006"><span class="cls_006">Cabeza</span></div>
+<div style="position:absolute;left:25.55px;top:87.71px" class="cls_002"><span class="cls_002">Nombre</span></div>
+<div style="position:absolute;left:164.81px;top:98.59px" class="cls_005"><span class="cls_005">Reflejos (Ref)</span></div>
+<div style="position:absolute;left:486.25px;top:103.29px" class="cls_006"><span class="cls_006">Torso</span></div>
+<div style="position:absolute;left:164.81px;top:117.59px" class="cls_005"><span class="cls_005">Destreza (Des)</span></div>
+<div style="position:absolute;left:486.25px;top:121.65px" class="cls_006"><span class="cls_006">Brazo Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:136.59px" class="cls_005"><span class="cls_005">Inteligencia (Int)</span></div>
+<div style="position:absolute;left:486.25px;top:140.02px" class="cls_006"><span class="cls_006">Brazo Der.</span></div>
+<div style="position:absolute;left:164.81px;top:155.59px" class="cls_005"><span class="cls_005">Carisma (Car)</span></div>
+<div style="position:absolute;left:486.25px;top:158.38px" class="cls_006"><span class="cls_006">Pierna Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:174.59px" class="cls_005"><span class="cls_005">Sentidos (Sen)</span></div>
+<div style="position:absolute;left:486.25px;top:176.74px" class="cls_006"><span class="cls_006">Pierna Der.</span></div>
+<div style="position:absolute;left:163.86px;top:195.89px" class="cls_007"><span class="cls_007">Combate Cuerpo a Cuerpo</span></div>
+<div style="position:absolute;left:163.80px;top:213.36px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:215.02px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.59px;top:215.03px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:215.03px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:215.03px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:215.03px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.13px;top:213.36px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.39px;top:213.36px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:213.49px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:452.12px;top:214.49px" class="cls_010"><span class="cls_010">Tipo</span></div>
+<div style="position:absolute;left:476.27px;top:214.49px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:503.17px;top:214.49px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:529.46px;top:214.49px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:548.64px;top:214.49px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.37px;top:225.25px" class="cls_004"><span class="cls_004">Sin Armas (Agi)</span></div>
+<div style="position:absolute;left:163.33px;top:238.52px" class="cls_004"><span class="cls_004">Esquivar (Ref)</span></div>
+<div style="position:absolute;left:25.55px;top:246.48px" class="cls_006"><span class="cls_006">Edad</span></div>
+<div style="position:absolute;left:62.67px;top:246.48px" class="cls_006"><span class="cls_006">Estatura</span></div>
+<div style="position:absolute;left:112.42px;top:246.48px" class="cls_006"><span class="cls_006">Peso</span></div>
+<div style="position:absolute;left:162.48px;top:251.27px" class="cls_004"><span class="cls_004">Armas de Contacto (Ref)</span></div>
+<div style="position:absolute;left:25.55px;top:264.58px" class="cls_006"><span class="cls_006">Raza</span></div>
+<div style="position:absolute;left:163.86px;top:269.51px" class="cls_007"><span class="cls_007">Combate a Distancia</span></div>
+<div style="position:absolute;left:25.55px;top:286.58px" class="cls_006"><span class="cls_006">Habilidad racial</span></div>
+<div style="position:absolute;left:163.80px;top:287.98px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:289.64px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.59px;top:289.64px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:289.64px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:289.64px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:289.64px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.13px;top:287.97px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.39px;top:287.97px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:288.20px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:430.48px;top:289.20px" class="cls_010"><span class="cls_010">Alc.</span></div>
+<div style="position:absolute;left:451.22px;top:289.20px" class="cls_010"><span class="cls_010">Mun.</span></div>
+<div style="position:absolute;left:467.27px;top:289.20px" class="cls_010"><span class="cls_010">Cap.</span></div>
+<div style="position:absolute;left:487.77px;top:289.20px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:511.77px;top:289.20px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:532.56px;top:289.20px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:547.89px;top:289.20px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.91px;top:299.87px" class="cls_004"><span class="cls_004">Armas de fuego (Des)</span></div>
+<div style="position:absolute;left:25.55px;top:309.04px" class="cls_006"><span class="cls_006">Arquetipo</span></div>
+<div style="position:absolute;left:163.81px;top:313.13px" class="cls_004"><span class="cls_004">Proyectiles (Ref)</span></div>
+<div style="position:absolute;left:163.81px;top:325.88px" class="cls_004"><span class="cls_004">Evitar/Cubrir (Ref)</span></div>
+<div style="position:absolute;left:25.55px;top:331.71px" class="cls_006"><span class="cls_006">Experiencia</span></div>
+<div style="position:absolute;left:25.55px;top:348.04px" class="cls_008"><span class="cls_008">Total</span></div>
+<div style="position:absolute;left:82.13px;top:348.04px" class="cls_008"><span class="cls_008">Por gastar</span></div>
+<div style="position:absolute;left:163.86px;top:342.49px" class="cls_007"><span class="cls_007">Combate en Vehículos</span></div>
+<div style="position:absolute;left:355.85px;top:343.34px" class="cls_007"><span class="cls_007">Movimiento</span></div>
+<div style="position:absolute;left:408.22px;top:355.36px" class="cls_004"><span class="cls_004">Mín.</span></div>
+<div style="position:absolute;left:438.69px;top:355.36px" class="cls_004"><span class="cls_004">Máx.</span></div>
+<div style="position:absolute;left:163.81px;top:360.96px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:362.63px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.59px;top:362.63px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:362.63px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:362.63px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:362.63px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.13px;top:360.96px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.39px;top:360.96px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:25.55px;top:368.38px" class="cls_006"><span class="cls_006">Dados Express</span></div>
+<div style="position:absolute;left:356.01px;top:368.65px" class="cls_004"><span class="cls_004">Movimiento</span></div>
+<div style="position:absolute;left:466.19px;top:368.09px" class="cls_004"><span class="cls_004">Acciones por turno</span></div>
+<div style="position:absolute;left:163.91px;top:372.85px" class="cls_004"><span class="cls_004">Artillero (FM*)</span></div>
+<div style="position:absolute;left:163.81px;top:386.12px" class="cls_004"><span class="cls_004">Maniobras evasión (FM*)</span></div>
+<div style="position:absolute;left:355.73px;top:384.09px" class="cls_004"><span class="cls_004">Carga máxima (p.p.)</span></div>
+<div style="position:absolute;left:466.19px;top:385.68px" class="cls_004"><span class="cls_004">Iniciativa</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:430px;width:595px;height:420px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="express/background2.jpg" width=595 height=420></div>
+<div style="position:absolute;left:32.94px;top:13.64px" class="cls_007"><span class="cls_007">Mística</span></div>
+<div style="position:absolute;left:234.32px;top:13.87px" class="cls_007"><span class="cls_007">Equipo</span></div>
+<div style="position:absolute;left:411.37px;top:13.87px" class="cls_007"><span class="cls_007">Idioma natal</span></div>
+<div style="position:absolute;left:234.52px;top:31.55px" class="cls_008"><span class="cls_008">Nombre del objeto</span></div>
+<div style="position:absolute;left:362.90px;top:31.55px" class="cls_008"><span class="cls_008">Peso (P.P)</span></div>
+<div style="position:absolute;left:32.45px;top:36.72px" class="cls_004"><span class="cls_004">Gremio</span></div>
+<div style="position:absolute;left:127.67px;top:36.72px" class="cls_004"><span class="cls_004">Sello divino</span></div>
+<div style="position:absolute;left:32.45px;top:52.72px" class="cls_004"><span class="cls_004">Rango</span></div>
+<div style="position:absolute;left:127.67px;top:52.72px" class="cls_004"><span class="cls_004">Meditación</span></div>
+<div style="position:absolute;left:411.37px;top:53.10px" class="cls_007"><span class="cls_007">Idiomas adquiridos</span></div>
+<div style="position:absolute;left:32.45px;top:69.47px" class="cls_004"><span class="cls_004">Nº Máx. de Conjuros</span></div>
+<div style="position:absolute;left:111.93px;top:69.47px" class="cls_004"><span class="cls_004">Nº Máx. de Objetos Mágicos</span></div>
+<div style="position:absolute;left:411.58px;top:70.78px" class="cls_008"><span class="cls_008">Idioma</span></div>
+<div style="position:absolute;left:545.05px;top:70.78px" class="cls_008"><span class="cls_008">Nivel</span></div>
+<div style="position:absolute;left:32.45px;top:91.34px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:98.36px;top:93.01px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:108.67px;top:93.01px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:119.27px;top:93.01px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:129.57px;top:93.01px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:139.88px;top:93.01px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:153.20px;top:91.34px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:175.47px;top:91.34px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:32.45px;top:103.32px" class="cls_004"><span class="cls_004">Aprender Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:32.45px;top:116.17px" class="cls_004"><span class="cls_004">Canalización </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:32.45px;top:129.12px" class="cls_004"><span class="cls_004">Olvidar Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:32.45px;top:142.77px" class="cls_004"><span class="cls_004">Proyección </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:32.45px;top:155.53px" class="cls_004"><span class="cls_004">Resistir Magia </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:138.80px;top:174.74px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:176.99px;top:174.74px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:32.45px;top:185.98px" class="cls_006"><span class="cls_006">Energía Mental </span><span class="cls_011">(EM, Int x 10)</span></div>
+<div style="position:absolute;left:411.37px;top:179.12px" class="cls_007"><span class="cls_007">Técnicas</span></div>
+<div style="position:absolute;left:411.58px;top:196.81px" class="cls_008"><span class="cls_008">Técnica</span></div>
+<div style="position:absolute;left:537.47px;top:196.81px" class="cls_008"><span class="cls_008">Pág. libro</span></div>
+<div style="position:absolute;left:32.24px;top:209.66px" class="cls_007"><span class="cls_007">Hechizos</span></div>
+<div style="position:absolute;left:32.45px;top:227.34px" class="cls_008"><span class="cls_008">Nombre</span></div>
+<div style="position:absolute;left:134.83px;top:227.34px" class="cls_008"><span class="cls_008">Página/libro Memorizado</span></div>
+<div style="position:absolute;left:411.37px;top:304.20px" class="cls_007"><span class="cls_007">Dinero</span></div>
+<div style="position:absolute;left:411.58px;top:323.52px" class="cls_008"><span class="cls_008">Cantidad</span></div>
+<div style="position:absolute;left:455.66px;top:323.52px" class="cls_008"><span class="cls_008">Efectivo  Banco (si no está en efectivo)</span></div>
+<div style="position:absolute;left:314.65px;top:349.08px" class="cls_006"><span class="cls_006">Total P.P. Cargados</span></div>
+<div style="position:absolute;left:323.26px;top:365.41px" class="cls_006"><span class="cls_006">P.P. Disponibles</span></div>
+<div style="position:absolute;left:281.89px;top:378.97px" class="cls_002"><span class="cls_002">MS por exceso de carga</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:860px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="express/background3.jpg" width=595 height=841></div>
+<div style="position:absolute;left:162.86px;top:11.26px" class="cls_003"><span class="cls_003">Características</span></div>
+<div style="position:absolute;left:286.84px;top:13.26px" class="cls_007"><span class="cls_007">Especialidades</span></div>
+<div style="position:absolute;left:488.33px;top:13.26px" class="cls_007"><span class="cls_007">Vitalidad</span></div>
+<div style="position:absolute;left:360.93px;top:26.76px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:371.24px;top:26.76px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:381.84px;top:26.76px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:392.15px;top:26.76px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:402.45px;top:26.76px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:415.78px;top:25.09px" class="cls_008"><span class="cls_008">Carac.  Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:222.78px;top:28.09px" class="cls_004"><span class="cls_004">Base</span></div>
+<div style="position:absolute;left:248.56px;top:28.09px" class="cls_008"><span class="cls_008">Mod.</span></div>
+<div style="position:absolute;left:495.74px;top:29.21px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:533.93px;top:29.21px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:164.81px;top:41.39px" class="cls_005"><span class="cls_005">Fuerza (Frz)</span></div>
+<div style="position:absolute;left:164.81px;top:60.64px" class="cls_005"><span class="cls_005">Aguante (Agu)</span></div>
+<div style="position:absolute;left:488.32px;top:60.98px" class="cls_007"><span class="cls_007">Blindaje</span></div>
+<div style="position:absolute;left:25.54px;top:72.85px" class="cls_006"><span class="cls_006">Jugador</span></div>
+<div style="position:absolute;left:530.10px;top:71.69px" class="cls_004"><span class="cls_004">CA</span></div>
+<div style="position:absolute;left:554.99px;top:71.69px" class="cls_008"><span class="cls_008">MS</span></div>
+<div style="position:absolute;left:164.81px;top:79.64px" class="cls_005"><span class="cls_005">Agilidad (Agi)</span></div>
+<div style="position:absolute;left:486.25px;top:84.98px" class="cls_006"><span class="cls_006">Cabeza</span></div>
+<div style="position:absolute;left:25.54px;top:87.76px" class="cls_002"><span class="cls_002">Nombre</span></div>
+<div style="position:absolute;left:164.81px;top:98.64px" class="cls_005"><span class="cls_005">Reflejos (Ref)</span></div>
+<div style="position:absolute;left:486.25px;top:103.34px" class="cls_006"><span class="cls_006">Torso</span></div>
+<div style="position:absolute;left:164.81px;top:117.64px" class="cls_005"><span class="cls_005">Destreza (Des)</span></div>
+<div style="position:absolute;left:486.25px;top:121.71px" class="cls_006"><span class="cls_006">Brazo Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:136.64px" class="cls_005"><span class="cls_005">Inteligencia (Int)</span></div>
+<div style="position:absolute;left:486.25px;top:140.07px" class="cls_006"><span class="cls_006">Brazo Der.</span></div>
+<div style="position:absolute;left:164.81px;top:155.64px" class="cls_005"><span class="cls_005">Carisma (Car)</span></div>
+<div style="position:absolute;left:486.25px;top:158.43px" class="cls_006"><span class="cls_006">Pierna Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:174.64px" class="cls_005"><span class="cls_005">Sentidos (Sen)</span></div>
+<div style="position:absolute;left:486.25px;top:176.79px" class="cls_006"><span class="cls_006">Pierna Der.</span></div>
+<div style="position:absolute;left:163.86px;top:195.94px" class="cls_007"><span class="cls_007">Combate Cuerpo a Cuerpo</span></div>
+<div style="position:absolute;left:163.80px;top:213.41px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:215.08px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:215.08px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:215.08px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:215.08px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:215.08px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:213.41px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:213.41px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:213.54px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:452.12px;top:214.54px" class="cls_010"><span class="cls_010">Tipo</span></div>
+<div style="position:absolute;left:476.26px;top:214.54px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:503.17px;top:214.54px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:529.45px;top:214.54px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:548.63px;top:214.54px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.36px;top:225.30px" class="cls_004"><span class="cls_004">Sin Armas (Agi)</span></div>
+<div style="position:absolute;left:163.33px;top:238.57px" class="cls_004"><span class="cls_004">Esquivar (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:246.53px" class="cls_006"><span class="cls_006">Edad</span></div>
+<div style="position:absolute;left:62.67px;top:246.53px" class="cls_006"><span class="cls_006">Estatura</span></div>
+<div style="position:absolute;left:112.41px;top:246.53px" class="cls_006"><span class="cls_006">Peso</span></div>
+<div style="position:absolute;left:162.47px;top:251.32px" class="cls_004"><span class="cls_004">Armas de Contacto (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:264.63px" class="cls_006"><span class="cls_006">Raza</span></div>
+<div style="position:absolute;left:163.86px;top:269.56px" class="cls_007"><span class="cls_007">Combate a Distancia</span></div>
+<div style="position:absolute;left:25.54px;top:286.63px" class="cls_006"><span class="cls_006">Habilidad racial</span></div>
+<div style="position:absolute;left:163.80px;top:288.03px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:289.69px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:289.69px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:289.69px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:289.69px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:289.69px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:288.03px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:288.03px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:288.25px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:430.47px;top:289.25px" class="cls_010"><span class="cls_010">Alc.</span></div>
+<div style="position:absolute;left:451.21px;top:289.25px" class="cls_010"><span class="cls_010">Mun.</span></div>
+<div style="position:absolute;left:467.27px;top:289.25px" class="cls_010"><span class="cls_010">Cap.</span></div>
+<div style="position:absolute;left:487.77px;top:289.25px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:511.77px;top:289.25px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:532.56px;top:289.25px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:547.88px;top:289.25px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.91px;top:299.92px" class="cls_004"><span class="cls_004">Armas de fuego (Des)</span></div>
+<div style="position:absolute;left:25.54px;top:309.09px" class="cls_006"><span class="cls_006">Arquetipo</span></div>
+<div style="position:absolute;left:163.80px;top:313.18px" class="cls_004"><span class="cls_004">Proyectiles (Ref)</span></div>
+<div style="position:absolute;left:163.80px;top:325.93px" class="cls_004"><span class="cls_004">Evitar/Cubrir (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:331.76px" class="cls_006"><span class="cls_006">Experiencia</span></div>
+<div style="position:absolute;left:25.54px;top:348.09px" class="cls_008"><span class="cls_008">Total</span></div>
+<div style="position:absolute;left:82.12px;top:348.09px" class="cls_008"><span class="cls_008">Por gastar</span></div>
+<div style="position:absolute;left:163.86px;top:342.55px" class="cls_007"><span class="cls_007">Combate en Vehículos</span></div>
+<div style="position:absolute;left:355.85px;top:343.39px" class="cls_007"><span class="cls_007">Movimiento</span></div>
+<div style="position:absolute;left:408.22px;top:355.42px" class="cls_004"><span class="cls_004">Mín.</span></div>
+<div style="position:absolute;left:438.69px;top:355.41px" class="cls_004"><span class="cls_004">Máx.</span></div>
+<div style="position:absolute;left:163.80px;top:361.01px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:362.68px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:362.68px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:362.68px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:362.68px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:362.68px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:361.01px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:361.01px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:25.54px;top:368.43px" class="cls_006"><span class="cls_006">Dados Express</span></div>
+<div style="position:absolute;left:356.01px;top:368.70px" class="cls_004"><span class="cls_004">Movimiento</span></div>
+<div style="position:absolute;left:466.18px;top:368.14px" class="cls_004"><span class="cls_004">Acciones por turno</span></div>
+<div style="position:absolute;left:163.91px;top:372.90px" class="cls_004"><span class="cls_004">Artillero (FM*)</span></div>
+<div style="position:absolute;left:163.80px;top:386.17px" class="cls_004"><span class="cls_004">Maniobras evasión (FM*)</span></div>
+<div style="position:absolute;left:355.73px;top:384.14px" class="cls_004"><span class="cls_004">Carga máxima (p.p.)</span></div>
+<div style="position:absolute;left:466.18px;top:385.74px" class="cls_004"><span class="cls_004">Iniciativa</span></div>
+<div style="position:absolute;left:162.86px;top:432.20px" class="cls_003"><span class="cls_003">Características</span></div>
+<div style="position:absolute;left:286.84px;top:434.20px" class="cls_007"><span class="cls_007">Especialidades</span></div>
+<div style="position:absolute;left:488.33px;top:434.20px" class="cls_007"><span class="cls_007">Vitalidad</span></div>
+<div style="position:absolute;left:360.93px;top:447.71px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:371.24px;top:447.71px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:381.84px;top:447.71px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:392.15px;top:447.71px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:402.45px;top:447.71px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:415.78px;top:446.04px" class="cls_008"><span class="cls_008">Carac.  Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:222.78px;top:449.04px" class="cls_004"><span class="cls_004">Base</span></div>
+<div style="position:absolute;left:248.56px;top:449.04px" class="cls_008"><span class="cls_008">Mod.</span></div>
+<div style="position:absolute;left:495.74px;top:450.16px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:533.93px;top:450.16px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:164.81px;top:462.33px" class="cls_005"><span class="cls_005">Fuerza (Frz)</span></div>
+<div style="position:absolute;left:164.81px;top:481.59px" class="cls_005"><span class="cls_005">Aguante (Agu)</span></div>
+<div style="position:absolute;left:488.32px;top:481.92px" class="cls_007"><span class="cls_007">Blindaje</span></div>
+<div style="position:absolute;left:25.54px;top:493.79px" class="cls_006"><span class="cls_006">Jugador</span></div>
+<div style="position:absolute;left:530.10px;top:492.63px" class="cls_004"><span class="cls_004">CA</span></div>
+<div style="position:absolute;left:554.99px;top:492.63px" class="cls_008"><span class="cls_008">MS</span></div>
+<div style="position:absolute;left:164.81px;top:500.59px" class="cls_005"><span class="cls_005">Agilidad (Agi)</span></div>
+<div style="position:absolute;left:486.25px;top:505.93px" class="cls_006"><span class="cls_006">Cabeza</span></div>
+<div style="position:absolute;left:25.54px;top:508.70px" class="cls_002"><span class="cls_002">Nombre</span></div>
+<div style="position:absolute;left:164.81px;top:519.59px" class="cls_005"><span class="cls_005">Reflejos (Ref)</span></div>
+<div style="position:absolute;left:486.25px;top:524.29px" class="cls_006"><span class="cls_006">Torso</span></div>
+<div style="position:absolute;left:164.81px;top:538.59px" class="cls_005"><span class="cls_005">Destreza (Des)</span></div>
+<div style="position:absolute;left:486.25px;top:542.65px" class="cls_006"><span class="cls_006">Brazo Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:557.59px" class="cls_005"><span class="cls_005">Inteligencia (Int)</span></div>
+<div style="position:absolute;left:486.25px;top:561.01px" class="cls_006"><span class="cls_006">Brazo Der.</span></div>
+<div style="position:absolute;left:164.81px;top:576.59px" class="cls_005"><span class="cls_005">Carisma (Car)</span></div>
+<div style="position:absolute;left:486.25px;top:579.38px" class="cls_006"><span class="cls_006">Pierna Izq.</span></div>
+<div style="position:absolute;left:164.81px;top:595.59px" class="cls_005"><span class="cls_005">Sentidos (Sen)</span></div>
+<div style="position:absolute;left:486.25px;top:597.74px" class="cls_006"><span class="cls_006">Pierna Der.</span></div>
+<div style="position:absolute;left:163.86px;top:616.89px" class="cls_007"><span class="cls_007">Combate Cuerpo a Cuerpo</span></div>
+<div style="position:absolute;left:163.80px;top:634.36px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:636.02px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:636.02px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:636.02px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:636.02px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:636.02px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:634.36px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:634.36px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:634.49px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:452.12px;top:635.49px" class="cls_010"><span class="cls_010">Tipo</span></div>
+<div style="position:absolute;left:476.26px;top:635.49px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:503.17px;top:635.49px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:529.45px;top:635.49px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:548.63px;top:635.49px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.36px;top:646.25px" class="cls_004"><span class="cls_004">Sin Armas (Agi)</span></div>
+<div style="position:absolute;left:163.33px;top:659.51px" class="cls_004"><span class="cls_004">Esquivar (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:667.47px" class="cls_006"><span class="cls_006">Edad</span></div>
+<div style="position:absolute;left:62.67px;top:667.47px" class="cls_006"><span class="cls_006">Estatura</span></div>
+<div style="position:absolute;left:112.41px;top:667.47px" class="cls_006"><span class="cls_006">Peso</span></div>
+<div style="position:absolute;left:162.47px;top:672.26px" class="cls_004"><span class="cls_004">Armas de Contacto (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:685.57px" class="cls_006"><span class="cls_006">Raza</span></div>
+<div style="position:absolute;left:163.86px;top:690.50px" class="cls_007"><span class="cls_007">Combate a Distancia</span></div>
+<div style="position:absolute;left:25.54px;top:707.57px" class="cls_006"><span class="cls_006">Habilidad racial</span></div>
+<div style="position:absolute;left:163.80px;top:708.97px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:710.64px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:710.64px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:710.64px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:710.64px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:710.64px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:708.97px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:708.97px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:349.13px;top:709.19px" class="cls_004"><span class="cls_004">Arma</span></div>
+<div style="position:absolute;left:430.47px;top:710.19px" class="cls_010"><span class="cls_010">Alc.</span></div>
+<div style="position:absolute;left:451.21px;top:710.19px" class="cls_010"><span class="cls_010">Mun.</span></div>
+<div style="position:absolute;left:467.27px;top:710.19px" class="cls_010"><span class="cls_010">Cap.</span></div>
+<div style="position:absolute;left:487.77px;top:710.19px" class="cls_010"><span class="cls_010">Uso</span></div>
+<div style="position:absolute;left:511.77px;top:710.19px" class="cls_010"><span class="cls_010">Daño</span></div>
+<div style="position:absolute;left:532.56px;top:710.19px" class="cls_010"><span class="cls_010">Ocu.</span></div>
+<div style="position:absolute;left:547.88px;top:710.19px" class="cls_010"><span class="cls_010">P.P.</span></div>
+<div style="position:absolute;left:163.91px;top:720.86px" class="cls_004"><span class="cls_004">Armas de fuego (Des)</span></div>
+<div style="position:absolute;left:25.54px;top:730.04px" class="cls_006"><span class="cls_006">Arquetipo</span></div>
+<div style="position:absolute;left:163.80px;top:734.13px" class="cls_004"><span class="cls_004">Proyectiles (Ref)</span></div>
+<div style="position:absolute;left:163.80px;top:746.88px" class="cls_004"><span class="cls_004">Evitar/Cubrir (Ref)</span></div>
+<div style="position:absolute;left:25.54px;top:752.71px" class="cls_006"><span class="cls_006">Experiencia</span></div>
+<div style="position:absolute;left:25.54px;top:769.04px" class="cls_008"><span class="cls_008">Total</span></div>
+<div style="position:absolute;left:82.12px;top:769.04px" class="cls_008"><span class="cls_008">Por gastar</span></div>
+<div style="position:absolute;left:163.86px;top:763.49px" class="cls_007"><span class="cls_007">Combate en Vehículos</span></div>
+<div style="position:absolute;left:355.85px;top:764.34px" class="cls_007"><span class="cls_007">Movimiento</span></div>
+<div style="position:absolute;left:408.22px;top:776.36px" class="cls_004"><span class="cls_004">Mín.</span></div>
+<div style="position:absolute;left:438.69px;top:776.36px" class="cls_004"><span class="cls_004">Máx.</span></div>
+<div style="position:absolute;left:163.80px;top:781.96px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:229.28px;top:783.63px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:239.58px;top:783.63px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:250.19px;top:783.63px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:260.49px;top:783.63px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:270.80px;top:783.63px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:284.12px;top:781.96px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:306.38px;top:781.96px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:25.54px;top:789.38px" class="cls_006"><span class="cls_006">Dados Express</span></div>
+<div style="position:absolute;left:356.01px;top:789.65px" class="cls_004"><span class="cls_004">Movimiento</span></div>
+<div style="position:absolute;left:466.18px;top:789.09px" class="cls_004"><span class="cls_004">Acciones por turno</span></div>
+<div style="position:absolute;left:163.91px;top:793.84px" class="cls_004"><span class="cls_004">Artillero (FM*)</span></div>
+<div style="position:absolute;left:163.80px;top:807.11px" class="cls_004"><span class="cls_004">Maniobras evasión (FM*)</span></div>
+<div style="position:absolute;left:355.73px;top:805.09px" class="cls_004"><span class="cls_004">Carga máxima (p.p.)</span></div>
+<div style="position:absolute;left:466.18px;top:806.68px" class="cls_004"><span class="cls_004">Iniciativa</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1711px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="express/background4.jpg" width=595 height=841></div>
+<div style="position:absolute;left:31.33px;top:13.69px" class="cls_007"><span class="cls_007">Mística</span></div>
+<div style="position:absolute;left:232.70px;top:13.92px" class="cls_007"><span class="cls_007">Equipo</span></div>
+<div style="position:absolute;left:409.76px;top:13.92px" class="cls_007"><span class="cls_007">Idioma natal</span></div>
+<div style="position:absolute;left:232.91px;top:31.60px" class="cls_008"><span class="cls_008">Nombre del objeto</span></div>
+<div style="position:absolute;left:361.29px;top:31.60px" class="cls_008"><span class="cls_008">Peso (P.P)</span></div>
+<div style="position:absolute;left:30.84px;top:36.77px" class="cls_004"><span class="cls_004">Gremio</span></div>
+<div style="position:absolute;left:126.06px;top:36.77px" class="cls_004"><span class="cls_004">Sello divino</span></div>
+<div style="position:absolute;left:30.84px;top:52.77px" class="cls_004"><span class="cls_004">Rango</span></div>
+<div style="position:absolute;left:126.06px;top:52.77px" class="cls_004"><span class="cls_004">Meditación</span></div>
+<div style="position:absolute;left:409.76px;top:53.15px" class="cls_007"><span class="cls_007">Idiomas adquiridos</span></div>
+<div style="position:absolute;left:30.84px;top:69.52px" class="cls_004"><span class="cls_004">Nº Máx. de Conjuros</span></div>
+<div style="position:absolute;left:110.31px;top:69.52px" class="cls_004"><span class="cls_004">Nº Máx. de Objetos Mágicos</span></div>
+<div style="position:absolute;left:409.97px;top:70.84px" class="cls_008"><span class="cls_008">Idioma</span></div>
+<div style="position:absolute;left:543.44px;top:70.84px" class="cls_008"><span class="cls_008">Nivel</span></div>
+<div style="position:absolute;left:30.84px;top:91.39px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:96.75px;top:93.06px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:107.05px;top:93.06px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:117.66px;top:93.06px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:127.96px;top:93.06px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:138.27px;top:93.06px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:151.59px;top:91.39px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:173.85px;top:91.39px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:30.84px;top:103.37px" class="cls_004"><span class="cls_004">Aprender Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:116.22px" class="cls_004"><span class="cls_004">Canalización </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:129.17px" class="cls_004"><span class="cls_004">Olvidar Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:142.83px" class="cls_004"><span class="cls_004">Proyección </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:155.58px" class="cls_004"><span class="cls_004">Resistir Magia </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:137.19px;top:174.79px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:175.37px;top:174.79px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:30.84px;top:186.03px" class="cls_006"><span class="cls_006">Energía Mental </span><span class="cls_011">(EM, Int x 10)</span></div>
+<div style="position:absolute;left:409.76px;top:179.18px" class="cls_007"><span class="cls_007">Técnicas</span></div>
+<div style="position:absolute;left:409.97px;top:196.86px" class="cls_008"><span class="cls_008">Técnica</span></div>
+<div style="position:absolute;left:535.86px;top:196.86px" class="cls_008"><span class="cls_008">Pág. libro</span></div>
+<div style="position:absolute;left:30.63px;top:209.71px" class="cls_007"><span class="cls_007">Hechizos</span></div>
+<div style="position:absolute;left:30.84px;top:227.39px" class="cls_008"><span class="cls_008">Nombre</span></div>
+<div style="position:absolute;left:133.21px;top:227.39px" class="cls_008"><span class="cls_008">Página/libro Memorizado</span></div>
+<div style="position:absolute;left:409.76px;top:304.25px" class="cls_007"><span class="cls_007">Dinero</span></div>
+<div style="position:absolute;left:409.97px;top:323.57px" class="cls_008"><span class="cls_008">Cantidad</span></div>
+<div style="position:absolute;left:454.05px;top:323.57px" class="cls_008"><span class="cls_008">Efectivo  Banco (si no está en efectivo)</span></div>
+<div style="position:absolute;left:313.03px;top:349.13px" class="cls_006"><span class="cls_006">Total P.P. Cargados</span></div>
+<div style="position:absolute;left:321.65px;top:365.46px" class="cls_006"><span class="cls_006">P.P. Disponibles</span></div>
+<div style="position:absolute;left:280.28px;top:379.02px" class="cls_002"><span class="cls_002">MS por exceso de carga</span></div>
+<div style="position:absolute;left:31.33px;top:434.64px" class="cls_007"><span class="cls_007">Mística</span></div>
+<div style="position:absolute;left:232.70px;top:434.86px" class="cls_007"><span class="cls_007">Equipo</span></div>
+<div style="position:absolute;left:409.76px;top:434.86px" class="cls_007"><span class="cls_007">Idioma natal</span></div>
+<div style="position:absolute;left:232.91px;top:452.55px" class="cls_008"><span class="cls_008">Nombre del objeto</span></div>
+<div style="position:absolute;left:361.29px;top:452.55px" class="cls_008"><span class="cls_008">Peso (P.P)</span></div>
+<div style="position:absolute;left:30.84px;top:457.71px" class="cls_004"><span class="cls_004">Gremio</span></div>
+<div style="position:absolute;left:126.06px;top:457.71px" class="cls_004"><span class="cls_004">Sello divino</span></div>
+<div style="position:absolute;left:30.84px;top:473.71px" class="cls_004"><span class="cls_004">Rango</span></div>
+<div style="position:absolute;left:126.06px;top:473.71px" class="cls_004"><span class="cls_004">Meditación</span></div>
+<div style="position:absolute;left:409.76px;top:474.10px" class="cls_007"><span class="cls_007">Idiomas adquiridos</span></div>
+<div style="position:absolute;left:30.84px;top:490.46px" class="cls_004"><span class="cls_004">Nº Máx. de Conjuros</span></div>
+<div style="position:absolute;left:110.31px;top:490.46px" class="cls_004"><span class="cls_004">Nº Máx. de Objetos Mágicos</span></div>
+<div style="position:absolute;left:409.97px;top:491.78px" class="cls_008"><span class="cls_008">Idioma</span></div>
+<div style="position:absolute;left:543.44px;top:491.78px" class="cls_008"><span class="cls_008">Nivel</span></div>
+<div style="position:absolute;left:30.84px;top:512.34px" class="cls_008"><span class="cls_008">Especialidad</span></div>
+<div style="position:absolute;left:96.75px;top:514.01px" class="cls_009"><span class="cls_009">+1</span></div>
+<div style="position:absolute;left:107.05px;top:514.01px" class="cls_009"><span class="cls_009">+2</span></div>
+<div style="position:absolute;left:117.66px;top:514.01px" class="cls_009"><span class="cls_009">+3</span></div>
+<div style="position:absolute;left:127.96px;top:514.01px" class="cls_009"><span class="cls_009">+4</span></div>
+<div style="position:absolute;left:138.27px;top:514.01px" class="cls_009"><span class="cls_009">+5</span></div>
+<div style="position:absolute;left:151.59px;top:512.34px" class="cls_008"><span class="cls_008">Carac.</span></div>
+<div style="position:absolute;left:173.85px;top:512.34px" class="cls_008"><span class="cls_008">Mod.</span><span class="cls_004"> MHE</span></div>
+<div style="position:absolute;left:30.84px;top:524.32px" class="cls_004"><span class="cls_004">Aprender Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:537.17px" class="cls_004"><span class="cls_004">Canalización </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:550.11px" class="cls_004"><span class="cls_004">Olvidar Conjuros </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:563.77px" class="cls_004"><span class="cls_004">Proyección </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:30.84px;top:576.52px" class="cls_004"><span class="cls_004">Resistir Magia </span><span class="cls_008">(Int)</span></div>
+<div style="position:absolute;left:137.19px;top:595.74px" class="cls_004"><span class="cls_004">Total</span></div>
+<div style="position:absolute;left:175.37px;top:595.74px" class="cls_008"><span class="cls_008">Restante</span></div>
+<div style="position:absolute;left:30.84px;top:606.98px" class="cls_006"><span class="cls_006">Energía Mental </span><span class="cls_011">(EM, Int x 10)</span></div>
+<div style="position:absolute;left:409.76px;top:600.12px" class="cls_007"><span class="cls_007">Técnicas</span></div>
+<div style="position:absolute;left:409.97px;top:617.80px" class="cls_008"><span class="cls_008">Técnica</span></div>
+<div style="position:absolute;left:535.86px;top:617.80px" class="cls_008"><span class="cls_008">Pág. libro</span></div>
+<div style="position:absolute;left:30.63px;top:630.65px" class="cls_007"><span class="cls_007">Hechizos</span></div>
+<div style="position:absolute;left:30.84px;top:648.34px" class="cls_008"><span class="cls_008">Nombre</span></div>
+<div style="position:absolute;left:133.21px;top:648.34px" class="cls_008"><span class="cls_008">Página/libro Memorizado</span></div>
+<div style="position:absolute;left:409.76px;top:725.20px" class="cls_007"><span class="cls_007">Dinero</span></div>
+<div style="position:absolute;left:409.97px;top:744.52px" class="cls_008"><span class="cls_008">Cantidad</span></div>
+<div style="position:absolute;left:454.05px;top:744.52px" class="cls_008"><span class="cls_008">Efectivo  Banco (si no está en efectivo)</span></div>
+<div style="position:absolute;left:313.03px;top:770.08px" class="cls_006"><span class="cls_006">Total P.P. Cargados</span></div>
+<div style="position:absolute;left:321.65px;top:786.40px" class="cls_006"><span class="cls_006">P.P. Disponibles</span></div>
+<div style="position:absolute;left:280.28px;top:799.96px" class="cls_002"><span class="cls_002">MS por exceso de carga</span></div>
+</div>
+
+</body>
+</html>
